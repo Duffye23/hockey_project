@@ -12,7 +12,7 @@ from flask_cors import CORS
 # Database Setup
 #################################################
 
-engine = create_engine('postgresql://postgres:postgres@localhost:5432/climate_change')
+# engine = create_engine('postgresql://postgres:postgres@localhost:5432/***INSERT DATABASE***')
 
 # reflect an existing database into a new model
 Base = automap_base()
