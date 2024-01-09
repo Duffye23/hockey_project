@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Energy Analysis Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>   
+
+    <style>
+        .col-md-12 img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;   
+        }   
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Energy Analysis Dashboard</h1>
+            <p class="lead">Country Comparison</p>
+            <a class="btn btn-success btn-lg" href="https://github.com/yosieph/Project1" role="button">Project 1 Data Analysis</a>
+        </div>            
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 centre" data-tilt>
+                <img src="https://tharawat.org/wp-content/uploads/2022/12/Website-header-e1670259531766-2048x901.png"
+                alt="energy data Analysis" title="Energy Data Analysis" class="rounded">
+            </div>
+        </div>
+        <div class="row0">
+            <div class="col-md-12 centre">
+                <h4 style="text-align: center; margin: auto;">The relationship between energy usage and global warming is a critical subject in today's world. This data
+                analysis helps to explore this relationship and highlight it's significance, which is very important for
+                policymakers, governments, researchers, and the general public. In our previous data
+                analysis, we investigated the relationship between low-carbon energy, temperatures and CO2 emissions.
+                <br>
+                <br>
+                In this dashboard, we dive deeper into our analysis by comparing 2 selected countries. We compare their location, GPD,
+                CO2 Emission, land mass, and other factors.
+                <br>
+                <br>
+                <br>
+                </h4>
+            </div>
+        <div class="row1">    
+            <div class="col-md-6">
+                <div class="well">
+                    <h5>Select First Country :</h5>
+                    <select id="selCountry1"></select>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">First Country Info</h3>
+                    </div>
+                    <div id="sample-metadata1" class="panel-body"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="well">
+                    <h5>Select Second Country:</h5>
+                    <select id="selCountry2"></select>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Second Country Info</h3>
+                    </div>
+                    <div id="sample-metadata2" class="panel-body"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col-md-4" data-tilt>
+                <div id="barChart"></div>
+            </div>
+            <div class="col-md-4" data-tilt>
+                <div id="barChart2"></div>
+            </div>
+            <div class="col-md-4" data-tilt>
+                <div id="barChart3"></div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="col-3 col-sm-6 col-md-12" data-tilt>
+                <div id="bubbleChart"></div>
+            </div>
+        </div>
+        <div class="row4">  
+            <div class="col-md-12">
+                <div id="piechart"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+</body>
+
+</html>
