@@ -25,6 +25,10 @@ To answer this question we chose to try three different machine learning algorit
 * Danik Lafrance
 * Evan Duffy
 
+# Database Creation
+We chose to create our database using MOngoDB as the interface MongoDB Compass allows for extremely simple database creation and data importing. Simply create your database 'hockey_project_db', and an initial collection, we used '2022-2023'. You then click "add data" and select the json/csv option. You will be prompted to select the corresponding .csv file. Once that is done, Compass imports your data and creates the necessary columns for the database. We then proceeded to create 2 new collections ufor the other season using the same method. Had we chosen to do this via SQL, we would have had to create the indivicdual Schemas for all three tables and initially we had over 100 columns so that would have been arduous. MongoDB Compass streamlined the process exponentially.
+
+
 # Data Exploration
 We pulled our data from https://moneypuck.com/data.htm as the website had complete datasets for NHL seasons including every player in the league going back 15 years to 2008. We decided to only use the previous year, 2022-2023, as our training and testing data set as it was the most recent and was within the same era of hockey as the current season so its data would be the most applicable when we validated our algorithm using this season's, 2023-2024, current data. The dataset that we had included over 100 columns and 3000 rows, and not all of it was pertinent to our initial question. We ended up pairing our data down to 19 columns and just over 800 rows. We removed irrelevant columns, and decided to remove the copies of players in different game type situations (5on5, 4on5, etc.). We also created a new column to measure the impact a palyer's icetime per game would have. 
 
