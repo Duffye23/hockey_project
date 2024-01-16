@@ -8,6 +8,23 @@ To answer this question we chose to try three different machine learning algorit
 2. A random forest model: Another form of regressor, the random forest algorith applies nuremours decision trees for added accuracy. We decided to test this one out as it was another model that we had learned in class and found that it more robust than the linear regression
 3. A Neural Network: The most advanced model we learnt in class, this was added for its complexity and customizability. The Neural Network had to be configured differently from what we had done in class as we used it to classify rather than predict and that brought us a good challenge.
 
+# Libraries
+
+* Python 3.7.7
+* Pandas 1.0.5
+* Pymongo 3.9.0
+* Seaborn 0.12.2
+* Numpy 1.21.6
+* Matplotlib 3.2.2
+* Tensorflow 2.11.0
+* Tensorflow.Addons 0.19.0
+* SciKit-Learn 1.0.2
+
+# Authors
+
+* Danik Lafrance
+* Evan Duffy
+
 # Data Exploration
 We pulled our data from https://moneypuck.com/data.htm as the website had complete datasets for NHL seasons including every player in the league going back 15 years to 2008. We decided to only use the previous year, 2022-2023, as our training and testing data set as it was the most recent and was within the same era of hockey as the current season so its data would be the most applicable when we validated our algorithm using this season's, 2023-2024, current data. The dataset that we had included over 100 columns and 3000 rows, and not all of it was pertinent to our initial question. We ended up pairing our data down to 19 columns and just over 800 rows. We removed irrelevant columns, and decided to remove the copies of players in different game type situations (5on5, 4on5, etc.). We also created a new column to measure the impact a palyer's icetime per game would have. 
 
