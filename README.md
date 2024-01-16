@@ -63,9 +63,9 @@ While the model seems to lose a bit of accuracy when it loaded, it still display
 In conclusion, we were able to successfully create 3 machine learning algorithms that could predict a players' point total fairly accurately. The Neural Network edged out the Linear regression in terms of R2 score in the model notebook making it the most accurate. We used that one in our evaluation of the new data and while it scored a lower R2 than it did on the training and test data, it still posted an R2 score of .8808 which more than meets the required .8 R2. This result does make sense as the Neural Network is able to be refined and tweaked the most out of the machine learning algorithms that we studied.
 
 
-Sources Used:
-Carleton Bootcamp Lesson Plans and Activities
-Money Puck for the data: https://moneypuck.com/data.htm
-Calling all documents with pymongo: https://stackoverflow.com/questions/37941610/get-all-documents-of-a-collection-using-pymongo
-Seaborn multiplot grid explanation
-The xpert learning assistant for various checks
+# Sources Used:
+Carleton Bootcamp Lesson Plans and Activities</br>
+Money Puck for the data: https://moneypuck.com/data.htm</br>
+Calling all documents with pymongo: https://stackoverflow.com/questions/37941610/get-all-documents-of-a-collection-using-pymongo</br>
+Seaborn multiplot grid explanation: https://seaborn.pydata.org/tutorial/axis_grids.html</br>
+The xpert learning assistant for various checks</br>
