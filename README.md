@@ -34,7 +34,38 @@ We then dropped the columns that had low correlation and redid our heatmap.
 
 We then saved our new .csvs to be used with our models.
 
+#Model Testing
+
+Before testing the models, we we noticed that a new unnamed column was created when loading the .csv files and so we had to drop it before scaling and splitting our data.</br>
+Seeing the new column:</br>
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/808d48f3-a564-45c9-b8fa-93ad60d4c67b)
+
+We then split our data, and then scaled it in order to normalize our data and have our training and testing data isolated and ready for use.
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/a3e9972b-0cdd-470b-9048-d6c1ecfb4782)</br>
+Below are the results for each model, and the refined Neural Net.
+
+# Linear Regression Model Results
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/bf239af6-7f46-4f8a-967d-169796a878b7)
+
+# Random Forest Model
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/6029376c-14f8-4cdf-8939-cbaed6d5a305)
 
 
+# Neural Network Model
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/646db112-e3d1-49e8-8815-d311612370ed)
 
 
+# Refining the Neural Netowrk
+While the model seems to lose a bit of accuracy when it loaded, it still displays an R2 score of .8808 which is very robust and satisfactory for our project. We then apply it to the new validation data so that we can view its performance.
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/5b0b99e7-6604-4af3-abeb-5a4b2eb7cc05)
+
+# Conclusion
+In conclusion, we were able to successfully create 3 machine learning algorithms that could predict a players' point total fairly accurately. The Neural Network edged out the Linear regression in terms of R2 score in the model notebook making it the most accurate. We used that one in our evaluation of the new data and while it scored a lower R2 than it did on the training and test data, it still posted an R2 score of .8808 which more than meets the required .8 R2. This result does make sense as the Neural Network is able to be refined and tweaked the most out of the machine learning algorithms that we studied.
+
+
+Sources Used:
+Carleton Bootcamp Lesson Plans and Activities
+Money Puck for the data: https://moneypuck.com/data.htm
+Calling all documents with pymongo: https://stackoverflow.com/questions/37941610/get-all-documents-of-a-collection-using-pymongo
+Seaborn multiplot grid explanation
+The xpert learning assistant for various checks
