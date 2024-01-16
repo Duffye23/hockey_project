@@ -69,12 +69,16 @@ Below are the results for each model, and the refined Neural Net.
 
 
 # Neural Network Model
-![image](https://github.com/Duffye23/hockey_project/assets/58863493/646db112-e3d1-49e8-8815-d311612370ed)
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/5567e2a3-aab8-4f2a-9eb9-a9b4f7b9e1d5)</br>
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/38234aab-c63c-4e8a-9bb7-e8737b1c8c41)
 
 
 # Refining the Neural Netowrk
 While the model seems to lose a bit of accuracy when it loaded, it still displays an R2 score of .8808 which is very robust and satisfactory for our project. We then apply it to the new validation data so that we can view its performance.
-![image](https://github.com/Duffye23/hockey_project/assets/58863493/5b0b99e7-6604-4af3-abeb-5a4b2eb7cc05)
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/6f468094-8dc4-4115-befd-afe7e4ebd3f9)</br>
+![image](https://github.com/Duffye23/hockey_project/assets/58863493/9cd0f822-3dee-4c24-aecc-76d989b8379e)
+
+
 
 # Conclusion
 In conclusion, we were able to successfully create 3 machine learning algorithms that could predict a players' point total fairly accurately. The Neural Network edged out the Linear regression in terms of R2 score in the model notebook making it the most accurate. We used that one in our evaluation of the new data and while it scored a lower R2 than it did on the training and test data, it still posted an R2 score of .8808 which more than meets the required .8 R2. This result does make sense as the Neural Network is able to be refined and tweaked the most out of the machine learning algorithms that we studied.
